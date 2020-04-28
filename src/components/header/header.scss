@@ -1,0 +1,45 @@
+.header {
+	margin-top: 1em;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 1.6em;
+	h1 {
+		letter-spacing: 0.1em;
+	}
+
+	.headerLinks {
+		font-size: 0.9em;
+		ul {
+			display: inline-flex;
+		}
+
+		li {
+			margin: 0 1em;
+			a {
+				color: white;
+				text-decoration: none;
+				letter-spacing: 0.2em;
+				position: relative;
+				padding-bottom: 10px;
+			}
+
+			a:hover:after {
+				width: 100%;
+				left: 0;
+			}
+			a:after {
+				background: none repeat scroll 0 0 transparent;
+				bottom: 0;
+				content: "";
+				display: block;
+				height: 2px;
+				right: 0;
+				position: absolute;
+				background: white;
+				transition: width 1s ease 0s, right 0.5s ease 0s;
+				width: 0;
+			}
+		}
+	}
+}

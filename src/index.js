@@ -3,11 +3,6 @@ import ReactDOM from "react-dom";
 import "reset-css";
 import "./index.scss";
 
-import App from "./App";
+import AppRouter from "./routers/AppRouter";
 
-ReactDOM.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>,
-	document.getElementById("root")
-);
+ReactDOM.render(<AppRouter />, document.getElementById("root"));
