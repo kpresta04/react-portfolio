@@ -2,25 +2,24 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "../components/header/header";
 import App from "../App";
+import Portfolio from "../components/portfolio/Portfolio";
+import Skills from "../components/skills/Skills.component";
+import Contact from "../components/contact/Contact";
+import NotFoundPage from "../components/NotFoundPage/NotFoundPage";
 
 export default function AppRouter() {
 	return (
 		<BrowserRouter>
 			<div>
 				<Header />
-				<App />
 
-				{/* <Switch>
-					<Route path="/" component={homePage} exact={true} />
-					<Route path="/signup" component={SignUpPage} />
-					<Route path="/signin" component={SignInPage} />
+				<Switch>
+					<Route path="/" component={App} exact={true} />
+					<Route path="/portfolio" component={Portfolio} />
+					<Route path="/skills" component={Skills} />
 					<Route path="/contact" component={Contact} />
-					<Route path="/faq" component={FAQ} />
-					<Route path="/about" component={AboutPage} />
-					<Route path="/account" component={Account} />
-					<Route path="/privacy" component={Privacy} />
 					<Route component={NotFoundPage} />
-				</Switch> */}
+				</Switch>
 			</div>
 		</BrowserRouter>
 	);
