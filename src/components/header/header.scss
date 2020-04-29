@@ -4,8 +4,9 @@
 	display: flex;
 	justify-content: space-evenly;
 	font-size: 1.6em;
-	h1 {
-		letter-spacing: 0.1em;
+
+	#homeLink {
+		letter-spacing: 0.15em;
 	}
 
 	.headerLinks {
@@ -16,30 +17,30 @@
 
 		li {
 			margin: 0 1em;
-			a {
-				color: white;
-				text-decoration: none;
-				letter-spacing: 0.2em;
-				position: relative;
-				padding-bottom: 10px;
-			}
+		}
+		a {
+			color: white;
+			text-decoration: none;
+			letter-spacing: 0.2em;
+			position: relative;
+			padding-bottom: 10px;
+		}
 
-			a:hover:after {
-				width: 100%;
-				left: 0;
-			}
-			a:after {
-				background: none repeat scroll 0 0 transparent;
-				bottom: 0;
-				content: "";
-				display: block;
-				height: 2px;
-				right: 0;
-				position: absolute;
-				background: white;
-				transition: width 1s ease 0s, right 0.5s ease 0s;
-				width: 0;
-			}
+		a:hover:after {
+			width: 100%;
+			left: 0;
+		}
+		a:after {
+			background: none repeat scroll 0 0 transparent;
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 2px;
+			right: 0;
+			position: absolute;
+			background: white;
+			transition: width 1s ease 0s, right 0.5s ease 0s;
+			width: 0;
 		}
 	}
 }
