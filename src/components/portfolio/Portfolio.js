@@ -17,16 +17,13 @@
 // }
 
 import React from "react";
-import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
-import CameraIcon from "@material-ui/icons/PhotoCamera";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Grid from "@material-ui/core/Grid";
-import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
@@ -48,11 +45,18 @@ import Link from "@material-ui/core/Link";
 
 function Copyright() {
 	return (
-		<Typography variant="body2" color="textSecondary" align="center">
+		<Typography
+			variant="body2"
+			color="textSecondary"
+			style={{
+				display: "inline-flex",
+				justifyContent: "center",
+				marginRight: "5px",
+			}}
+			align="center"
+		>
 			{"Copyright © "}
-			<h4 style={{ display: "inline", marginRight: "5px" }} color="inherit">
-				Kellen Presta
-			</h4>
+			{"Kellen Presta"}
 			{new Date().getFullYear()}
 			{"."}
 		</Typography>
@@ -64,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
 		marginRight: theme.spacing(2),
 	},
 	heroContent: {
-		backgroundColor: theme.palette.background.paper,
+		backgroundColor: "#100e16",
 		padding: theme.spacing(8, 0, 6),
 	},
 	heroButtons: {
@@ -98,7 +102,7 @@ export default function Album() {
 
 	return (
 		<React.Fragment>
-			<CssBaseline />
+			{/* <CssBaseline /> */}
 
 			<main>
 				{/* Hero unit */}
@@ -108,7 +112,7 @@ export default function Album() {
 							component="h1"
 							variant="h2"
 							align="center"
-							color="textPrimary"
+							style={{ color: "white" }}
 							gutterBottom
 						>
 							Project Portfolio
