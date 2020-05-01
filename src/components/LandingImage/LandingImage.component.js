@@ -3,7 +3,7 @@ import "./landingImage.scss";
 import { Link } from "react-router-dom";
 
 const ImageHeader = () => (
-	<h1 id="welcomeBenefit" className="leading fade-in">
+	<h1 id="welcomeBenefit" className="leading">
 		Bringing your projects to life
 	</h1>
 );
@@ -64,7 +64,7 @@ export default function LandingImage() {
 					></img>
 				</picture>
 			)}
-			<div className="welcome-text">
+			<div className="welcome-text  fade-in">
 				<ImageHeader />
 				<ImageSubHeader />
 			</div>
