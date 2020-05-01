@@ -21,7 +21,7 @@ const Header = () => {
 	return (
 		<div className="header">
 			<div className="headerLinks">
-				<Link id="homeLink" to="/">
+				<Link style={{ paddingLeft: "1em" }} id="homeLink" to="/">
 					Kellen Presta
 				</Link>
 			</div>
