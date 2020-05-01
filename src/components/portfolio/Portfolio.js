@@ -22,42 +22,42 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 
-// const projects = [
-// 	{
-// 		title: "Blackjack App",
-// 		image: (
-// 			<picture>
-// 				<source srcSet="./assets/images/blackjack.webp" type="image/webp" />
-// 				<img src="./assets/images/blackjack.png" alt="Blackjack App"></img>
-// 			</picture>
-// 		),
-// 		deployedLink: "https://radiant-harbor-37445.herokuapp.com/",
-// 		gitHubLink: "https://github.com/kpresta04/blackjack",
-// 	},
-// ];
+const projects = [
+	{
+		title: "Blackjack App",
+		image: "./assets/images/blackjack.png",
+		description: "Play blackjack!",
+		deployedLink: "https://radiant-harbor-37445.herokuapp.com/",
+		gitHubLink: "https://github.com/kpresta04/blackjack",
+	},
+	{
+		title: "Brewery Finder",
+		image: "./assets/images/beerme400Smaller.png",
+		description: "Find top recommended breweries in your area",
+		deployedLink: "https://kpresta04.github.io/beerme",
+		gitHubLink: "https://github.com/kpresta04/beerme",
+	},
+	{
+		title: "Weather Dashboard",
+		image: "./assets/images/weatherdash400.png",
+		description:
+			"Search for a city to display the current weather and a 5 day forecast.",
+		deployedLink: "https://kpresta04.github.io/weatherdashboard",
+		gitHubLink: "https://github.com/kpresta04/weatherdashboard",
+	},
+];
 
 function Copyright() {
 	return (
-		<Typography
-			variant="body2"
-			color="textSecondary"
-			style={{
-				display: "inline-flex",
-				justifyContent: "center",
-				marginRight: "5px",
-			}}
-			align="center"
-		>
+		<Typography variant="body2" align="center">
 			{"Copyright © "}
-			{"Kellen Presta"}
-			{new Date().getFullYear()}
+			{"Kellen Presta"} {new Date().getFullYear()}
 			{"."}
 		</Typography>
 	);
@@ -90,12 +90,10 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1,
 	},
 	footer: {
-		backgroundColor: theme.palette.background.paper,
+		backgroundColor: "#100e16",
 		padding: theme.spacing(6),
 	},
 }));
-
-const cards = [1, 2, 3, 4, 5, 6];
 
 export default function Album() {
 	const classes = useStyles();
@@ -122,29 +120,26 @@ export default function Album() {
 				<Container className={classes.cardGrid} maxWidth="md">
 					{/* End hero unit */}
 					<Grid container spacing={4}>
-						{cards.map((card) => (
-							<Grid item key={card} xs={12} sm={6} md={4}>
+						{projects.map((project, index) => (
+							<Grid item key={index} xs={12} sm={6} md={4}>
 								<Card className={classes.card}>
 									<CardMedia
 										className={classes.cardMedia}
-										image="https://source.unsplash.com/random"
-										title="Image title"
+										image={project.image}
+										title={project.title}
 									/>
 									<CardContent className={classes.cardContent}>
 										<Typography gutterBottom variant="h5" component="h2">
-											Heading
+											{project.title}
 										</Typography>
-										<Typography>
-											This is a media card. You can use this section to describe
-											the content.
-										</Typography>
+										<Typography>{project.description}</Typography>
 									</CardContent>
 									<CardActions>
 										<Button size="small" color="primary">
-											View
+											<Link href={project.deployedLink}>Demo</Link>
 										</Button>
 										<Button size="small" color="primary">
-											Edit
+											<Link href={project.gitHubLink}>Github</Link>
 										</Button>
 									</CardActions>
 								</Card>
@@ -155,13 +150,11 @@ export default function Album() {
 			</main>
 			{/* Footer */}
 			<footer className={classes.footer}>
-				<Typography
-					variant="subtitle1"
-					align="center"
-					color="textSecondary"
-					component="p"
-				>
-					Something here to give the footer a purpose!
+				<Typography variant="subtitle1" align="center" component="p">
+					<Link href="https://github.com/kpresta04">Github</Link>{" "}
+					<Link href="https://www.linkedin.com/in/kellen-presta-986215198/">
+						Linkedin
+					</Link>
 				</Typography>
 				<Copyright />
 			</footer>
