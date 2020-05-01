@@ -12,7 +12,6 @@ const Header = () => {
 		};
 
 		window.addEventListener("resize", handleWindowResize);
-		console.log(windowWidth);
 
 		return () => {
 			window.removeEventListener("resize", handleWindowResize);
@@ -26,7 +25,7 @@ const Header = () => {
 					Kellen Presta
 				</Link>
 			</div>
-			<HeaderLinks />
+			{windowWidth > 600 && <HeaderLinks />}
 		</div>
 	);
 };

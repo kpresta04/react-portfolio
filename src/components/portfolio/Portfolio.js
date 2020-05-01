@@ -27,6 +27,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
+import HeroText from "../HeroText/HeroText.component";
 
 const projects = [
 	{
@@ -94,19 +95,7 @@ export default function Album() {
 
 			<main>
 				{/* Hero unit */}
-				<div className={classes.heroContent}>
-					<Container maxWidth="sm">
-						<Typography
-							component="h1"
-							variant="h2"
-							align="center"
-							style={{ color: "white" }}
-							gutterBottom
-						>
-							Project Portfolio
-						</Typography>
-					</Container>
-				</div>
+				<HeroText text={"Project Portfolio"} />
 				<Container className={classes.cardGrid} maxWidth="md">
 					{/* End hero unit */}
 					<Grid container spacing={4}>

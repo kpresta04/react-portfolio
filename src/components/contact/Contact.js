@@ -1,11 +1,12 @@
 import React from "react";
 import "./contact.scss";
+import HeroText from "../HeroText/HeroText.component";
 
 export default function Contact() {
 	return (
 		<div>
 			<section id="contact">
-				<h3>Get in Touch</h3>
+				<HeroText text="Get in Touch" />
 
 				<form
 					id="contactForm"

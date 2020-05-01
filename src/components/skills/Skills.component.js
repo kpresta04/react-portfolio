@@ -1,6 +1,7 @@
 import React from "react";
 import SkillCard from "../SkillCard/SkillCard.component";
 import "./skills.scss";
+import HeroText from "../HeroText/HeroText.component";
 
 const skills = [
 	{
@@ -54,15 +55,18 @@ const skills = [
 
 export default function Skills() {
 	return (
-		<div className="skillCardDiv">
-			{skills.map((el, index) => (
-				<SkillCard
-					key={index}
-					imageURL={el.imageURL}
-					title={el.title}
-					list={el.list}
-				/>
-			))}
+		<div>
+			<HeroText text="Skills" />
+			<div className="skillCardDiv">
+				{skills.map((el, index) => (
+					<SkillCard
+						key={index}
+						imageURL={el.imageURL}
+						title={el.title}
+						list={el.list}
+					/>
+				))}
+			</div>
 		</div>
 	);
 }

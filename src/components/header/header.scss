@@ -2,7 +2,7 @@
 	margin-top: 1em;
 	text-transform: uppercase;
 	display: flex;
-	justify-content: space-evenly;
+
 	font-size: 1.6em;
 
 	#homeLink {
@@ -45,8 +45,9 @@
 	}
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 600px) {
 	.header {
+		justify-content: space-evenly;
 		font-size: 2em;
 		margin-bottom: 2.5em;
 
