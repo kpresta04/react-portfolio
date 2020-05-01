@@ -6,6 +6,7 @@ import Portfolio from "../components/portfolio/Portfolio";
 import Skills from "../components/skills/Skills.component";
 import Contact from "../components/contact/Contact";
 import NotFoundPage from "../components/NotFoundPage/NotFoundPage";
+import Footer from "../components/Footer/Footer.component";
 
 export default function AppRouter() {
 	return (
@@ -20,6 +21,7 @@ export default function AppRouter() {
 					<Route path="/contact" component={Contact} />
 					<Route component={NotFoundPage} />
 				</Switch>
+				<Footer />
 			</div>
 		</BrowserRouter>
 	);

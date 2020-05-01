@@ -53,16 +53,6 @@ const projects = [
 	},
 ];
 
-function Copyright() {
-	return (
-		<Typography variant="body2" align="center">
-			{"Copyright © "}
-			{"Kellen Presta"} {new Date().getFullYear()}
-			{"."}
-		</Typography>
-	);
-}
-
 const useStyles = makeStyles((theme) => ({
 	icon: {
 		marginRight: theme.spacing(2),
@@ -149,15 +139,7 @@ export default function Album() {
 				</Container>
 			</main>
 			{/* Footer */}
-			<footer className={classes.footer}>
-				<Typography variant="subtitle1" align="center" component="p">
-					<Link href="https://github.com/kpresta04">Github</Link>{" "}
-					<Link href="https://www.linkedin.com/in/kellen-presta-986215198/">
-						Linkedin
-					</Link>
-				</Typography>
-				<Copyright />
-			</footer>
+
 			{/* End footer */}
 		</React.Fragment>
 	);
