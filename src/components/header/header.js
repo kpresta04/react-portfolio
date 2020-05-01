@@ -25,7 +25,7 @@ const Header = () => {
 					Kellen Presta
 				</Link>
 			</div>
-			{windowWidth > 600 && <HeaderLinks />}
+			{windowWidth > 800 && <HeaderLinks />}
 		</div>
 	);
 };
