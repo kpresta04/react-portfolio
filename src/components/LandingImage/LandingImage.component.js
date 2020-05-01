@@ -2,6 +2,23 @@ import React, { useEffect, useState } from "react";
 import "./landingImage.scss";
 import { Link } from "react-router-dom";
 
+const ImageHeader = () => (
+	<h1 id="welcomeBenefit" className="leading fade-in">
+		Bringing your projects to life
+	</h1>
+);
+
+const ImageSubHeader = () => (
+	<div className="subWelcome" style={{ textAlign: "center" }}>
+		<h3 id="welcomeSubtitle">Full Stack Engineer</h3>
+		<Link to="/portfolio">
+			<button id="welcomeButton" className="  button">
+				View My Work
+			</button>
+		</Link>
+	</div>
+);
+
 export default function LandingImage() {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -48,15 +65,8 @@ export default function LandingImage() {
 				</picture>
 			)}
 			<div className="welcome-text">
-				<h1 id="welcomeBenefit" className="leading">
-					I bring your projects to life
-				</h1>
-				<h3 id="welcomeSubtitle">Full Stack Engineer</h3>
-				<Link to="/portfolio">
-					<button id="welcomeButton" className="button">
-						View My Work
-					</button>
-				</Link>
+				<ImageHeader />
+				<ImageSubHeader />
 			</div>
 		</div>
 	);

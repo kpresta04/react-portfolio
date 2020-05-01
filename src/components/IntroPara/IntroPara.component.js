@@ -4,7 +4,7 @@ import "./introPara.scss";
 export default function IntroPara() {
 	return (
 		<div className="introText">
-			<h2 className="heading-secondary">
+			<h2 className="heading-secondary fade-in">
 				Front End Focused with Full Stack Experience
 			</h2>
 			<section id="intro">
