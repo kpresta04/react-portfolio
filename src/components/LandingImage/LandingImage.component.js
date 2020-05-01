@@ -3,13 +3,13 @@ import "./landingImage.scss";
 import { Link } from "react-router-dom";
 
 const ImageHeader = () => (
-	<h1 id="welcomeBenefit" className="leading">
+	<h1 id="welcomeBenefit" className="leading fade-in">
 		Bringing your projects to life
 	</h1>
 );
 
 const ImageSubHeader = () => (
-	<div className="subWelcome" style={{ textAlign: "center" }}>
+	<div className="subWelcome fade-in-slow" style={{ textAlign: "center" }}>
 		<h3 id="welcomeSubtitle">Full Stack Engineer</h3>
 		<Link to="/portfolio">
 			<button id="welcomeButton" className="  button">
@@ -64,7 +64,7 @@ export default function LandingImage() {
 					></img>
 				</picture>
 			)}
-			<div className="welcome-text  fade-in">
+			<div className="welcome-text">
 				<ImageHeader />
 				<ImageSubHeader />
 			</div>
