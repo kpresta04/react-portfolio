@@ -93,7 +93,7 @@ export default function Album() {
 		<React.Fragment>
 			{/* <CssBaseline /> */}
 
-			<main>
+			<main className="fade-in">
 				{/* Hero unit */}
 				<HeroText text={"Project Portfolio"} />
 				<Container className={classes.cardGrid} maxWidth="md">

@@ -4,7 +4,7 @@ import HeroText from "../HeroText/HeroText.component";
 
 export default function Contact() {
 	return (
-		<div>
+		<div className="fade-in">
 			<section id="contact">
 				<HeroText text="Get in Touch" />
 
