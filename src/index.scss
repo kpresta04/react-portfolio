@@ -40,6 +40,13 @@ html {
 	-o-animation: fadeInSlow ease 4s;
 	-ms-animation: fadeInSlow ease 4s;
 }
+.fade-in-fast {
+	animation: fadeInFast ease 1s;
+	-webkit-animation: fadeInFast ease 1s;
+	-moz-animation: fadeInFast ease 1s;
+	-o-animation: fadeInFast ease 1s;
+	-ms-animation: fadeInFast ease 1s;
+}
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -169,6 +176,55 @@ html {
 	80% {
 		opacity: 0;
 	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeInFast {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeInFast {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeInFast {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeInFast {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeInFast {
+	0% {
+		opacity: 0;
+	}
+
 	100% {
 		opacity: 1;
 	}

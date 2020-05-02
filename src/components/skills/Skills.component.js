@@ -55,7 +55,7 @@ const skills = [
 
 export default function Skills() {
 	return (
-		<div>
+		<div className="fade-in-fast">
 			<HeroText text="Skills" />
 			<div className="skillCardDiv">
 				{skills.map((el, index) => (
