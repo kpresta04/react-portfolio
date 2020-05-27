@@ -29,27 +29,30 @@ import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import HeroText from "../HeroText/HeroText.component";
 import Iframe from "react-iframe";
+import "./portfolio.scss";
 
 const projects = [
 	{
 		title: "Casino Royale",
 		image: "./assets/images/blackjack.png",
-		description: "Play blackjack!",
+		description:
+			"Web app for selling chips to play games. Built in MERN with Redux and Firebase. Implemented Blackjack and Slots.",
 		deployedLink: "https://react-casino-royale.herokuapp.com/",
 		gitHubLink: "https://github.com/kpresta04/blackjack",
 	},
 	{
 		title: "Brewery Finder",
 		image: "./assets/images/beerme400Smaller.png",
-		description: "Find top recommended breweries in your area",
+		description:
+			"VanillaJS app for finding breweries in your area. Utilizes Mapbox with Foursquare API and Bulma CSS.",
 		deployedLink: "https://kpresta04.github.io/beerme",
 		gitHubLink: "https://github.com/kpresta04/beerme",
 	},
 	{
-		title: "Weather Dashboard",
+		title: "Google Books Search",
 		image: "./assets/images/weatherdash400.png",
 		description:
-			"Search for a city to display the current weather and a 5 day forecast.",
+			"Web app for saving a list of your favorite books. Built in MERN with Redux and utilizes Google Books API.",
 		deployedLink: "https://gbr-search.herokuapp.com/",
 		gitHubLink: "https://github.com/kpresta04/weatherdashboard",
 	},
@@ -57,7 +60,7 @@ const projects = [
 		title: "Tomato Tracker",
 		image: "./assets/images/weatherdash400.png",
 		description:
-			"Search for a city to display the current weather and a 5 day forecast.",
+			"App for tracking productivity with the Pomodoro Technique. See if you can fill the page with tomatoes!",
 		deployedLink: "https://tomato-tracker.com/",
 		gitHubLink: "https://github.com/kpresta04/weatherdashboard",
 	},
@@ -87,6 +90,9 @@ const useStyles = makeStyles((theme) => ({
 		paddingTop: "56.25%", // 16:9
 	},
 	cardContent: {
+		backgroundColor: "#edf2f7",
+
+		margin: "0px auto",
 		flexGrow: 1,
 	},
 	footer: {
@@ -107,7 +113,7 @@ export default function Album() {
 				<HeroText text={"Project Portfolio"} />
 
 				{/* End hero unit */}
-				<Container className={classes.cardGrid} maxWidth="lg">
+				<Container className={classes.cardGrid + "hello"} maxWidth="lg">
 					{/* <div className="mx-auto" style={{ maxWidth: "2000px" }}> */}
 					{/* End hero unit */}
 					<Grid container spacing={3}>
@@ -117,13 +123,36 @@ export default function Album() {
 									url={project.deployedLink}
 									height="450px"
 									width="100%"
-									scrolling="no"
-									className="project-Iframe mx-auto my-4 xs:p-4  max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl
+									className="project-Iframe mx-auto mt-4 xs:p-4  max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl
 						
 							 "
 									// display="initial"
 									// position="relative"
 								/>
+								{/* <div className="card-body w-full bg-purple-100 text-black">
+									{project.description}
+								</div> */}
+								<CardContent className={classes.cardContent}>
+									<Typography
+										className="text-black  xs:max-w-xs"
+										gutterBottom
+										variant="h5"
+										component="h2"
+									>
+										{project.title}
+									</Typography>
+									<Typography className="xs:max-w-xs text-black">
+										{project.description}
+									</Typography>
+								</CardContent>
+								<CardActions className="card-links mx-auto xs:max-w-xs bg-gray-200">
+									<Button variant="outlined" size="large" color="primary">
+										<Link href={project.deployedLink}>WebSite</Link>
+									</Button>
+									<Button variant="outlined" size="large" color="primary">
+										<Link href={project.gitHubLink}>Github</Link>
+									</Button>
+								</CardActions>
 							</Grid>
 						))}
 					</Grid>

@@ -24,7 +24,12 @@ export default function Footer() {
 	const classes = useStyles();
 	return (
 		<footer className={classes.footer}>
-			<Typography variant="subtitle1" align="center" component="p">
+			<Typography
+				className="uppercase"
+				variant="subtitle1"
+				align="center"
+				component="p"
+			>
 				<Link href="https://github.com/kpresta04">Github</Link>{" "}
 				<Link href="https://www.linkedin.com/in/kellen-presta-986215198/">
 					Linkedin
