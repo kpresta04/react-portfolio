@@ -28,13 +28,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import HeroText from "../HeroText/HeroText.component";
+import Iframe from "react-iframe";
 
 const projects = [
 	{
-		title: "Blackjack App",
+		title: "Casino Royale",
 		image: "./assets/images/blackjack.png",
 		description: "Play blackjack!",
-		deployedLink: "https://radiant-harbor-37445.herokuapp.com/",
+		deployedLink: "https://react-casino-royale.herokuapp.com/",
 		gitHubLink: "https://github.com/kpresta04/blackjack",
 	},
 	{
@@ -49,7 +50,15 @@ const projects = [
 		image: "./assets/images/weatherdash400.png",
 		description:
 			"Search for a city to display the current weather and a 5 day forecast.",
-		deployedLink: "https://kpresta04.github.io/weatherdashboard",
+		deployedLink: "https://gbr-search.herokuapp.com/",
+		gitHubLink: "https://github.com/kpresta04/weatherdashboard",
+	},
+	{
+		title: "Tomato Tracker",
+		image: "./assets/images/weatherdash400.png",
+		description:
+			"Search for a city to display the current weather and a 5 day forecast.",
+		deployedLink: "https://tomato-tracker.com/",
 		gitHubLink: "https://github.com/kpresta04/weatherdashboard",
 	},
 ];
@@ -90,46 +99,40 @@ export default function Album() {
 	const classes = useStyles();
 
 	return (
-		<React.Fragment>
+		<div>
 			{/* <CssBaseline /> */}
 
 			<main className="fade-in-fast">
 				{/* Hero unit */}
 				<HeroText text={"Project Portfolio"} />
-				<Container className={classes.cardGrid} maxWidth="md">
+
+				{/* End hero unit */}
+				<Container className={classes.cardGrid} maxWidth="lg">
+					{/* <div className="mx-auto" style={{ maxWidth: "2000px" }}> */}
 					{/* End hero unit */}
-					<Grid container spacing={4}>
+					<Grid container spacing={3}>
 						{projects.map((project, index) => (
-							<Grid item key={index} xs={12} sm={6} md={4}>
-								<Card className={classes.card}>
-									<CardMedia
-										className={classes.cardMedia}
-										image={project.image}
-										title={project.title}
-									/>
-									<CardContent className={classes.cardContent}>
-										<Typography gutterBottom variant="h5" component="h2">
-											{project.title}
-										</Typography>
-										<Typography>{project.description}</Typography>
-									</CardContent>
-									<CardActions>
-										<Button size="small" color="primary">
-											<Link href={project.deployedLink}>Demo</Link>
-										</Button>
-										<Button size="small" color="primary">
-											<Link href={project.gitHubLink}>Github</Link>
-										</Button>
-									</CardActions>
-								</Card>
+							<Grid item key={index} xs={12} sm={6} md={6} lg={6}>
+								<Iframe
+									url={project.deployedLink}
+									height="450px"
+									width="100%"
+									scrolling="no"
+									className="project-Iframe mx-auto my-4 xs:p-4  max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl
+						
+							 "
+									// display="initial"
+									// position="relative"
+								/>
 							</Grid>
 						))}
 					</Grid>
 				</Container>
+				{/* </div> */}
 			</main>
 			{/* Footer */}
 
 			{/* End footer */}
-		</React.Fragment>
+		</div>
 	);
 }
