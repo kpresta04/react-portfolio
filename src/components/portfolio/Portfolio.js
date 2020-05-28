@@ -18,10 +18,8 @@
 
 import React from "react";
 import Button from "@material-ui/core/Button";
-import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
@@ -99,6 +97,16 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: "#100e16",
 		padding: theme.spacing(6),
 	},
+	cardButton: {
+		color: "white",
+		backgroundColor: "#3c366b;",
+		"&:hover": {
+			backgroundColor: "#100e15",
+		},
+	},
+	buttonLinks: {
+		color: "white",
+	},
 }));
 
 export default function Album() {
@@ -146,11 +154,30 @@ export default function Album() {
 									</Typography>
 								</CardContent>
 								<CardActions className="card-links mx-auto xs:max-w-xs bg-gray-200">
-									<Button variant="outlined" size="large" color="primary">
-										<Link href={project.deployedLink}>WebSite</Link>
+									<Button
+										className={classes.cardButton}
+										variant="contained"
+										size="large"
+										color="primary"
+									>
+										<Link
+											className={classes.buttonLinks}
+											href={project.deployedLink}
+										>
+											WebSite
+										</Link>
 									</Button>
-									<Button variant="outlined" size="large" color="primary">
-										<Link href={project.gitHubLink}>Github</Link>
+									<Button
+										className={classes.cardButton}
+										variant="contained"
+										size="large"
+									>
+										<Link
+											className={classes.buttonLinks}
+											href={project.gitHubLink}
+										>
+											Github
+										</Link>
 									</Button>
 								</CardActions>
 							</Grid>
