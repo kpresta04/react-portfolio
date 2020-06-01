@@ -58,7 +58,7 @@ const projects = [
 		title: "Tomato Tracker",
 		image: "./assets/images/weatherdash400.png",
 		description:
-			"App for tracking productivity with the Pomodoro Technique. See if you can fill the page with tomatoes!",
+			"App for tracking productivity with the Pomodoro Technique. See if you can fill the page with tomatoes! Built in React.",
 		deployedLink: "https://tomato-tracker.com/",
 		gitHubLink: "https://github.com/kpresta04/weatherdashboard",
 	},
