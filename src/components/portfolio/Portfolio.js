@@ -36,7 +36,7 @@ const projects = [
 		description:
 			"Web app for selling chips to play games. Built in MERN with Redux and Firebase. Implemented Blackjack and Slots.",
 		deployedLink: "https://react-casino-royale.herokuapp.com/",
-		gitHubLink: "https://github.com/kpresta04/blackjack",
+		gitHubLink: "https://github.com/kpresta04/casino-royale",
 	},
 	{
 		title: "Brewery Finder",
@@ -52,7 +52,7 @@ const projects = [
 		description:
 			"Web app for saving a list of your favorite books. Built in MERN with Redux and utilizes Google Books API.",
 		deployedLink: "https://gbr-search.herokuapp.com/",
-		gitHubLink: "https://github.com/kpresta04/weatherdashboard",
+		gitHubLink: "https://github.com/kpresta04/google-books-react-search",
 	},
 	{
 		title: "Tomato Tracker",
@@ -60,7 +60,7 @@ const projects = [
 		description:
 			"App for tracking productivity with the Pomodoro Technique. See if you can fill the page with tomatoes! Built in React.",
 		deployedLink: "https://tomato-tracker.com/",
-		gitHubLink: "https://github.com/kpresta04/weatherdashboard",
+		gitHubLink: "https://github.com/kpresta04/tomato-react",
 	},
 ];
 
