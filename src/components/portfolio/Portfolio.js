@@ -35,7 +35,7 @@ const projects = [
 		image: "./assets/images/blackjack.png",
 		description:
 			"Web app for selling chips to play games. Built in MERN with Redux and Firebase. Implemented Blackjack and Slots.",
-		deployedLink: "https://react-casino-royale.herokuapp.com/",
+		deployedLink: "https://casino-royale-9c472.web.app/",
 		gitHubLink: "https://github.com/kpresta04/casino-royale",
 	},
 	{
