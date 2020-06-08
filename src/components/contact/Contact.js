@@ -28,7 +28,7 @@ export default function Contact() {
 	return (
 		<div className="fade-in-fast">
 			<section id="contact">
-				<HeroText text="Get in Touch" />
+				<HeroText text="How to reach me" />
 
 				<div className={classes.root}>
 					<Typography variant="h4" gutterBottom>

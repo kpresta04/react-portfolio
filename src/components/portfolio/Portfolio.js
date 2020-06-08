@@ -32,7 +32,7 @@ import "./portfolio.scss";
 const projects = [
 	{
 		title: "Casino Royale",
-		image: "./assets/images/blackjack.png",
+		image: "./assets/images/cr7x450.png",
 		description:
 			"Web app for selling chips to play games. Built in MERN with Redux and Firebase. Implemented Blackjack and Slots.",
 		deployedLink: "https://casino-royale-9c472.web.app/",
@@ -40,7 +40,7 @@ const projects = [
 	},
 	{
 		title: "Brewery Finder",
-		image: "./assets/images/beerme400Smaller.png",
+		image: "./assets/images/beerme14x9.png",
 		description:
 			"VanillaJS app for finding breweries in your area. Utilizes Mapbox with Foursquare API and Bulma CSS.",
 		deployedLink: "https://kpresta04.github.io/beerme",
@@ -48,7 +48,7 @@ const projects = [
 	},
 	{
 		title: "Google Books Search",
-		image: "./assets/images/weatherdash400.png",
+		image: "./assets/images/gbs14x9.png",
 		description:
 			"Web app for saving a list of your favorite books. Built in MERN with Redux and utilizes Google Books API.",
 		deployedLink: "https://gbr-search.herokuapp.com/",
@@ -56,7 +56,7 @@ const projects = [
 	},
 	{
 		title: "Tomato Tracker",
-		image: "./assets/images/weatherdash400.png",
+		image: "./assets/images/tomatoTracker14x9.png",
 		description:
 			"App for tracking productivity with the Pomodoro Technique. See if you can fill the page with tomatoes! Built in React.",
 		deployedLink: "https://tomato-tracker.com/",
