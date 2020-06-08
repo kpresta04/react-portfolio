@@ -11,14 +11,14 @@ const skills = [
 			<ul>
 				<li>HTML 5</li>
 				<li>CSS3 | SASS</li>
-				<li>JavaScript</li>
+				<li>JavaScript (ES6)</li>
 				<li>React | Redux</li>
 			</ul>
 		),
 	},
 	{
 		imageURL: "./assets/images/share.png",
-		title: "Server",
+		title: "Back End",
 		list: (
 			<ul>
 				<li>NodeJS</li>
@@ -44,7 +44,7 @@ const skills = [
 		title: "Deployment",
 		list: (
 			<ul>
-				<li>System Design</li>
+				<li>Netlify</li>
 				<li>Heroku</li>
 				<li>Firebase</li>
 				<li>Git</li>

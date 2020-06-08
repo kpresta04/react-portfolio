@@ -15,8 +15,8 @@ export default function IntroPara() {
 				</p>
 				<h3 className="heading-tertiary">An Agile Collaborator</h3>
 				<p className="intro-para">
-					I always stay attuned to the newest frameworks, and plan to contribute
-					to open source.
+					With a passion for life-long learning, I always stay attuned to the
+					newest frameworks.
 				</p>
 			</section>
 		</div>
