@@ -10,13 +10,13 @@ export default function IntroPara() {
 			<section id="intro">
 				<h3 className="heading-tertiary">Motivated To Produce Results</h3>
 				<p className="intro-para">
-					As a tenacious and ambitious programmer, I use continuous iteration to
+					A tenacious and ambitious programmer, using continuous iteration to
 					produce results quickly and continuously improve products.
 				</p>
 				<h3 className="heading-tertiary">An Agile Collaborator</h3>
 				<p className="intro-para">
-					With a passion for life-long learning, I always stay attuned to the
-					newest frameworks.
+					With a passion for life-long learning, always expanding knowledge by
+					staying attuned to the newest technologies.
 				</p>
 			</section>
 		</div>
